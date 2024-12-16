@@ -13,13 +13,8 @@ class Buku extends Model
     protected $table = 'Buku';
 
     // Kolom yang dapat diisi secara massal
-    protected $fillable = [
-        'judul',
-        'penulis',
-        'penerbit',
-        'tahun_terbit',
-        'jumlah_stok',
-        'harga',
+    protected $guarded = [
+        'id'
     ];
 
     // Jika Anda menggunakan timestamp untuk kolom yang berbeda

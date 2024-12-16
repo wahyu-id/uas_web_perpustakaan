@@ -14,12 +14,8 @@ class Anggota extends Model
     // Mengatur primary key menjadi 'id_anggota'
     protected $primaryKey = 'id_anggota';
 
-    protected $fillable = [
-        'nama',
-        'email',
-        'no_telepon',
-        'alamat',
-        'tanggal_daftar',
+    protected $guarded = [
+        'id'
     ];
 
     const CREATED_AT = 'created_at';
