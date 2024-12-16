@@ -19,7 +19,7 @@ class Buku extends Model
         'penerbit',
         'tahun_terbit',
         'jumlah_stok',
-        'price',
+        'harga',
     ];
 
     // Jika Anda menggunakan timestamp untuk kolom yang berbeda
